@@ -1,30 +1,21 @@
-import React from "react";
-import { Outlet } from "react-router-dom";
-import style from "./Nav.module.css";
+import React from 'react';
+import './NavBar.css'; // Import CSS file for styling
 
-function Nav() {
+const NavBar = () => {
   return (
-    <>
-      <nav>
-        <div className={style.nav_container}>
-          <div className={style.nav_title_wrapper}>
-            <img
-              className={style.logo}
-              src="https://files.codingninjas.in/pl-ninja-16706.svg"
-              alt="logo"
-            />
-            <h4>Coding Ninjas</h4>
-          </div>
-          <div className={style.nav_details}>
-            <button>Courses</button>
-          </div>
-        </div>
-      </nav>
-      <Outlet />
-    </>
+    <nav className="nav-bar">
+      <div className="nav-logo">
+        <img src="company-logo.png" alt="Company Logo" />
+      </div>
+      <ul className="nav-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/login">Login</a></li>
+        <li><a href="/register">Register</a></li>
+        <li><a href="/menu">Menu</a></li>
+      </ul>
+    </nav>
   );
 }
 
-export default Nav;
-
+export default NavBar;
 
