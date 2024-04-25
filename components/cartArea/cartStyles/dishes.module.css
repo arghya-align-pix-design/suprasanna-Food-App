@@ -1,0 +1,27 @@
+.menu-display {
+    background-color: #192841; /* Dark blue background */
+    color: #fff; /* White text */
+    padding: 20px;
+  }
+  
+  .dish-list {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  .dish {
+    background-color: #294162; /* Lighter blue background */
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  .dish h3 {
+    margin-top: 0;
+  }
+  
+  .dish p {
+    margin-bottom: 5px;
+  }
+  
