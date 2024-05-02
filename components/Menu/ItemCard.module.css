@@ -1,0 +1,44 @@
+.dishCard {
+    background-color: gold; /* Golden card background */
+    border: 5px rgb(183, 122, 122) double;
+    border-radius: 10px 10px 0 0; /* Rounded top corners */
+    border-bottom: 2px solid black; /* Pointed bottom */
+    box-shadow: 0 0 25px rgb(243, 236, 236); /* Light shadow */
+    margin: 50px;
+    overflow: hidden; /* Ensure content stays within bounds */
+    width: 200px; /* Set a fixed width for consistency */
+    text-align: center; /* Center-align text and elements */
+  }
+  
+  .dishCardImage img {
+    width: 100%;
+    height: 150px; /* Adjust to fit the image */
+    object-fit: cover; /* Ensure the image covers the area */
+    border: 2px white double;
+  }
+  
+  .dishCardContent {
+    padding: 10px;
+    color: white;
+  }
+  
+  .dishCardContent h3 {
+    margin: 0;
+  }
+  
+  .dishCardContent p {
+    margin: 5px 0;
+  }
+  
+  .addToCart {
+    background-color: black; /* Black background for the button */
+    color: white; /* White text */
+    border: none;
+    border-radius: 5px; /* Rounded corners for the button */
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .addToCart:active {
+    background-color: darkgray; /* Darker shade when pressed */
+  }

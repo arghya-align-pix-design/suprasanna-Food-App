@@ -1,0 +1,64 @@
+.horizontalNavBar {
+    background-color: gold; /* Golden color for the navbar */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+  }
+  
+  .companyLogo img {
+    width: 50px; /* Adjust size to fit */
+    height: auto;
+    background-color: gold;
+  }
+  
+  .navButtons {
+    display: flex;
+    background-color: gold;
+  }
+  
+  .navButtons button {
+    background-color: gold; /* Golden color for buttons */
+    color: black; /* Black text */
+    border: none;
+    padding: 10px 20px; /* Provide some spacing */
+    border-radius: 5px;
+    margin-right: 10px; /* Space between buttons */
+    cursor: pointer;
+  }
+  
+  .navButtons button:hover {
+    background-color: #d4af37; /* Darker shade of gold on hover */
+  }
+  
+  .navButtons button.active {
+    background-color: #d4af37; /* Darker shade for active tab */
+  }
+  
+  .searchBar {
+    display: flex;
+    background-color: gold;
+    align-items: center;
+  }
+  
+  .searchBar input {
+    padding: 10px;
+    border: 1px solid black; /* Black border */
+    border-radius: 5px;
+    background-color: white; /* White background */
+    color: black; /* Black text */
+  }
+  
+  .searchBar button {
+    padding: 10px;
+    background-color: black; /* Black button */
+    color: white; /* White text */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .searchBar button:hover {
+    background-color: darkgray; /* Darker shade on hover */
+  }
+  

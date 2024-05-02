@@ -1,29 +1,35 @@
 import style from "./cartCard.module.css";
 import React from "react";
 //import { ITEMS } from "./cartItems.jsx";
-import {useParams} from "reat-router-dom";
-import {useValue} from "../Contexts/ItemContext.js";
+//import {useParams} from "reat-router-dom";
+//import {useValue} from "../Contexts/ItemContext.js";
 
 function CartCard({name, price, id, image}){
-   const {handleRemove, increase,decrease}=useValue();
-   const dishData=0;//mongodb method to extract cartItems whole
-   const {itemId}=useParams();
-   const item=dishData.find((i)=> i.id === itemId );
+   //const {handleRemove, increase,decrease}=useValue();
+   //const dishData=0;//mongodb method to extract cartItems whole
+  // const {itemId}=useParams();
+   //const item=dishData.find((i)=> i.id === itemId ); 
    
-   if(!item){
-    return (<h3> Item Details not found </h3>);
-   }
+  //  if(!item){
+  //   return (<h3> Item Details not found </h3>);
+  //  }
 
 
    return(
       <>
-        <div className={style.Dishcard} id={id} >
-          <div className={style.imgArea}>
+        <div className={style.cartItem} id={id} >
+          <div className={style.cartItemImage}>
             <img src={image} alt="" />
           </div>
-          <div> 
-           <h3> {name} </h3>
-           <h4>{price}</h4>           
+          <div className={style.cartItemDetails}> 
+           <h3> name </h3>
+           <p> price </p>
+            <p> <button className={style.quantity}  > - </button>  {/*onClick={()=>decrease()*/}
+                <span className={style.quantity}> qty </span>
+                <button className={style.quantity}  > + </button>   {/*onClick={()=>increase()*/}
+           </p>
+          <p> <button className={style.removeButton} > Remove </button></p>  {/* onClick={()=> handleRemove(id)*/}
+
           </div>
            
           

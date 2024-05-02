@@ -1,8 +1,9 @@
 import React from "react";
 import {useValue} from "../Contexts/ItemContext";
+import axios from "axios";
 import CartCard from "./dishCard";
 import style from "./Cart.module.css";
-
+//
 export default function Cart(){
     const {total,clear,cart,toggle}= useValue();
     return(

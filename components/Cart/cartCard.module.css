@@ -1,31 +1,71 @@
-.DishCard{
-    display: flex;
-    align-items: center;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Light shadow */
-    height: 100px;
-    width: 90vw;
-    margin: 10px auto;
-    padding: 10px;
-    background-color: #fff;
+.cartItem {
+  width:90%;
+  display: flex;
+  align-items: center;
+  background-color: rgb(255, 205, 205); /* Gold background */
+  border: 1px solid rgb(255, 205, 205); /* Black border */
+  border-radius: 10px 10px 10px 10px; /* Rounded top corners */
+  padding: 15px;
+  margin: 15px; /* Space between items */
 }
 
-.imgArt {
-    width: 30%;
-    height: 100%;
-    border-radius: 10px;
-    object-fit: cover;
-  }
-
-.content {
-    flex: 1;
-    padding: 0 20px;
+.cartItemImage {
+  flex: 1;
+  height:160px;
+  width:20%
 }
 
-.content h1 {
-    margin-top: 5px;
-  }
+.cartItemImage img {
+  width: 100%; /* Fixed width for consistency */
+  height: 100%; /* Fixed height */
+  object-fit: cover; /* Maintain aspect ratio */
+  border-radius: 10px 10px 10px 10px; /* Rounded top corners */
+}
 
-.content p {
-    margin-bottom: 5px;
-  }
+.cartItemDetails {
+  flex: 3; /* More space for item details */
+  padding-left: 20px; /* Space between image and details */
+  background-color: rgb(255, 205, 205);
+}
+
+.cartItemDetails h3 {
+  margin: 0; /* No extra margin for header */
+  background-color:rgb(255, 205, 205);
+  color: black; /* Black text */
+}
+
+.cartItemDetails p {
+  margin: 5px 0; /* Small margin for paragraph */
+  background-color:rgb(255, 205, 205);
+}
+
+.quantity {
+  display: flex; /* Align quantity controls */
+  background-color:rgb(255, 205, 205);
+  display:inline;
+  align-items: center; /* Align center */
+}
+
+.quantity button {
+  background-color: rgb(250, 250, 250); /* Black button background */
+  color: rgb(3, 2, 2); /* White text */
+  border: none;
+  display: inline;
+  padding: 5px 10px; /* Space for buttons */
+  border-radius: 5px; /* Rounded corners */
+  margin-right: 10px; /* Space between buttons */
+  cursor: pointer;
+}
+
+.removeButton {
+  background-color: darkgoldenrod; /* Gold background */
+  color: black; /* Black text */
+  border: none;
+  padding: 10px;
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer;
+}
+
+.removeButton:hover {
+  background-color: #cb8f53; /* Darker gold on hover */
+}

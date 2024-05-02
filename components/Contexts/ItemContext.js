@@ -1,4 +1,5 @@
 import { createContext, useState, useContext } from "react";
+import axios from "axios";
 import CartModal from "./components/CartModal";
 
 const itemContext = createContext();
@@ -9,10 +10,16 @@ function useValue() {
 }
 
 function CustomItemContext({ children }) {
+  const [users,setUsers]= useState([]);
+  const [logedUser, setLogedUser]= useState({userName:"" , password:""});
   const [total, setTotal] = useState(0);
   const [item, setItem] = useState(0);
   const [showCart, setShowCart] = useState(false);
   const [cart, setCart] = useState([]);
+
+  const loggIn=()=>{
+    
+  }
 
   const handleAdd = (prod) => {
     const index = cart.findIndex((item) => item.id === prod.id);
